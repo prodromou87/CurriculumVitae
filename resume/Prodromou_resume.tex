@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.1\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\name{Andreas Prodromou} % Your name
+\address{One Miramar St \\ San Diego 92092} % Your address
+\address{(858)~$\cdot$~263~$\cdot$~5813} % Your phone number
+\address{prodromou.andreas@gmail.com}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Ph.D., Computer Science} \hfill {\bf June 2013 -- Present} \\
+\em Department of Computer Science and Engineering \\
+\em University of California, San Diego 
+
+{\bf M.Sc., Computer Engineering} \hfill {\bf 2011 -- 2013} \\
+\em Department of Electrical and Computer Engineering \\
+\em University of Cyprus 
+
+{\bf B.Sc., Computer Engineering} \hfill {\bf 2007 -- 2011} \\
+\em Department of Electrical and Computer Engineering \\
+\em University of Cyprus 
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{University of California San Diego, CSE Department}{August 2013 -- Present}{Graduate Student Researcher}{San Diego, CA}
+	\item Exploring the capabilities of dynamic dead code elimination.
+	\item Evaluating memory controller scheduling policies under emerging technological trends.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{University of Cyprus, CS Department}{June 2011 -- June 2013}{Special Scientist}{Nicosia, Cyprus}
+	\item Part of Eurocloud FP7 Project (http://www.eurocloudserver.com/) -- European research and development program for building a 3D server-on-chip concept integrating low power cores.
+	\item Research in Network-on-Chip Reliability.
+	\item Designed and evaluated circuit-level modules to detect hardware faults. (Published in MICRO'45 conference)
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{University of Cyprus, ECE Department}{June 2010 -- September 2010}{Special Scientist}{Nicosia, Cyprus}
+	\item Implementation of a parameterized cycle-accurate Network-on-Chip simulator as part of a Full-System simulator (extensive programming and simulations)
+	\item Later awarded as Best Senior Design Project
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{KIOS Research Center for Intelligent Systems \& Networks}{June 2009 -- September 2009}{Undergraduate Research Scientist}{Nicosia, Cyprus}
+	\item Studied the infrastructure of a Network-on-Chip module
+	\item Implemented and assessed routing algorithms for such networks
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Interests}
+
+Memory scheduling policies, dynamic dead code elimination, multicore architectures, 3D microprocessor design, Network-on-Chip architectures. \\
+
+\end{rSection}
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming \& Scripting & C, C++, Java, Javascript, VHDL, Perl, Python \\
+Debugging & GDB \\
+Simulators & Gem5 \& Simics full-system simulators, Garnet NoC simulator, QEMU \\
+Architectural Analysis & SPEC \& PARSEC benchmarks, Pin, Simpoint \\
+Version Control & Git, SVN \\
+Languages & Greek, English\\
+\end{tabular}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+
+\begin{tabular}{L!{\VRule}R}
+2012 & NoCAlert: An on-line and real-time fault detection mechanism for network-on-chip architectures, \textbf{A. Prodromou}, A.Panteli, C. Nicopoulos and Y. Sazeides\\[5pt]
+2011 & Thermal characterization of cloud workloads on a power-efficient server-on-chip, D. Milojevic, S. Idgunji, D. Jevdjic, E. Ozer, P. Lotfi-Kamran, A. Panteli, \textbf{A. Prodromou}, C. Nicopoulos, D. Hardy, B. Falsafi and Y. Sazeides\\[5pt]
+\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Awards and Accomplishments}
+
+\begin{tabular}{L!{\VRule}R}
+2013&\textbf{Powell Fellowship} for academic years 2013--2016, UCSD Computer Science and Engineering.\\[5pt]
+2012&\textbf{HiPEAC Paper Award} for the paper titled ``NoCAlert: An on-line and real-time fault detection mechanism for network-on-chip architectures''.\\[5pt]
+2011&\textbf{Best Senior Design Project Award} in the Department of Electrical and Computer Engineering, University of Cyprus for academic year 2010-2011.\\[5pt]
+\end{tabular}
+
+\end{rSection}
+
+\nocite*
+\bibliographystyle{plain}
+\nobibliography{../publications}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
