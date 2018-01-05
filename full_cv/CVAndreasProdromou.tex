@@ -44,11 +44,9 @@
 
 \section{Research Interests}
 	\begin{itemize}
-		\item Multi/Many-Core Computer Architectures
-		\item 3D Microprocessor Architectures
-		\item Emerging Memory Technologies
-		\item Reliable and Fault-Tolerant Systems
-		\item Applications of Machine Learning algorithms in computer architecture
+		\item Heterogeneous and heterogeneous-ISA computer architectures
+        \item Heterogeneous memory architectures and emerging memory technologies
+        \item Applications of Machine Learning algorithms in computer architecture
 	\end{itemize}
  
 \section{Education} 
@@ -73,6 +71,24 @@
 
 \section{Research Experience}
 
+{\color{blue}\textbf{Graduate Student Researcher,} June 2013 -- Present} \\
+\emph{Department of Computer Science and Engineering, UCSD}, San Diego, CA \\
+\begin{itemize} \itemsep -2pt
+    \item \textbf{Dynamic memory management for Heterogeneous Memory Architectures.}
+    \begin{itemize}
+        \item Exploited a ``Majority Element Algorithm'', originally proposed for big data analytics, to achieve greater prediction accuracy on future memory accesses.
+        \item Combined MEA algorithm with a ``Divide-and-Conquer'' hardware mechanism for more efficient and scalable memory management than state-of-the-art proposals.
+        \item Work published in HPCA'17 conference.
+    \end{itemize}
+    \item \textbf{Machine-Learning-based scheduling for heterogeneous(-ISA) architectures }
+    \begin{itemize}
+        \item Trained and evaluated thousands of different ML models over large collection of data collected via simulations (43200 cycle-accurate simulations - 72 workloads on 600 different cores). These models were trained to predict dynamic performance given an application and core characterization.
+        \item Developed techniques to reverse-engineer trained ML models and understand how important each input feature is towards the prediction goal. Insights were later used to minimize amount of on-chip counters necessary and overall reduce overheads.
+        \item Proposed a ``scheduler efficiency'' metric to bridge the gap between ML metrics and system performance.
+        \item Proposed a ``system scheduling difficulty'' metric that quantifies how hard scheduling is for a given collection of cores in a processor. We find that scheduling difficulty is a reasonable architectural trade-off.
+    \end{itemize}
+\end{itemize}
+
 {\color{blue}\textbf{Co-op Intern,} June 2016 -- Sept. 2016} \\
 \emph{Advanced Micro Devices (AMD)}, Austin, Texas \\
 \begin{itemize} \itemsep -2pt
@@ -89,28 +105,6 @@
     \begin{itemize}
     	\item Developed dynamic memory management mechanism focusing mainly on scalability to very large memory capacities.
     	\item Utilizing a ``Majority Element Algorithm'' heuristic for extremely efficient activity tracking
-    \end{itemize}
-\end{itemize}
-
-{\color{blue}\textbf{Graduate Student Researcher,} June 2013 -- Present} \\
-\emph{Department of Computer Science and Engineering, University of Cyprus}, Nicosia, Cyprus \\
-\begin{itemize} \itemsep -2pt
-    \item Research in dynamic dead code elimination
-    \begin{itemize}
-    	\item Explored the capabilities of dead code elimination in the presence of big data workloads.
-    \end{itemize}
-    \item Research in memory controller scheduling policies 
-    \begin{itemize}
-        \item Evaluating existing policies under new technological trends.
-        \item Determining the optimal metrics to be used for scheduling policies via statistical analysis and queueing networks theory.
-    \end{itemize}
-    \item Research in dynamic memory management in hybrid configurations.
-    \begin{itemize}
-    	\item Evaluated and used a novel algorithm designed for databases and big data analytics to achieve greater prediction accuracy with a fraction of the cost compared to previous mechanisms.
-    \end{itemize}
-    \item Research in adopting Machine Learning techniques for use in computer architecture.
-    \begin{itemize}
-    	\item Explored the potential of various ML algorithms when used as schedulers for heterogeneous processors.
     \end{itemize}
 \end{itemize}
 
@@ -192,6 +186,7 @@ Reserve Officer in the Telecommunications Division of the Cyprus Military\\
 \section{Publications}
 
 \begin{tabular}{L!{\VRule}R}
+\vspace{1pt}2017&\bibentry{MG_HPCA_2018}\\[5pt]
 \vspace{1pt}2016&\bibentry{prodromou_mempod_2017}\\[5pt]
 \vspace{1pt}&\bibentry{JHR_SLIC_2017}\\[5pt]
 \vspace{1pt}&\bibentry{Chrysanthou_nocalert_2016}\\[5pt]
